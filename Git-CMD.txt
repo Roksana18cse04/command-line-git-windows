@@ -1,0 +1,90 @@
+=== File গিট এ ইনিশিয়েট আছে কিনা
+C:\Users\hp\Desktop\windows-cmd-promt>git remote
+
+C:\Users\hp\Desktop\windows-cmd-promt>cls  //<---clear screen--->
+
+
+--------------------GIT SETUP-----------------------
+C:\Users\hp\Desktop\windows-cmd-promt>git config user."ROKANA"
+C:\Users\hp\Desktop\windows-cmd-promt>git config user."roksana18cse04@gmail.com"
+C:\Users\hp\Desktop\windows-cmd-promt>git config --list
+
+
+
+----------------git initiate kora------------------
+C:\Users\hp\Desktop\windows-cmd-promt>git init
+working directory
+
+
+
+-------------git present status check before stagging area ------------
+
+C:\Users\hp\Desktop\windows-cmd-promt>git status
+
+
+----------------Stagging area---------------------
+-git add filename.extiontion
+C:\Users\hp\Desktop\windows-cmd-promt>git add Windows-cmd.txt
+C:\Users\hp\Desktop\windows-cmd-promt>git add --all{all file stagging area}
+
+
+-git diff {show modifide status}
+
+
+
+-------------commoit -------------
+
+git commit -m "message"
+
+C:\Users\hp\Desktop\windows-cmd-promt>git commit -m "Windows command promt "
+
+----------------uncommit------------------------
+
+git reset --soft HEAD~ [staggint arrea theke working directory neuya]
+git reset --hard HEAD~  [all file together}
+
+--------------------------Howw many commit ---------
+git log
+C:\Users\hp\Desktop\windows-cmd-promt>git log
+commit 4114a85789007be44b727ac4d4e223e659624015 (HEAD -> master)
+Author: roksana <roksana18cse04@gmail.com>
+Date:   Sun Aug 13 20:43:09 2023 +0600
+
+    Windows command promt
+
+C:\Users\hp\Desktop\windows-cmd-promt>git log --oneline
+4114a85 (HEAD -> master) Windows command promt
+
+C:\Users\hp\Desktop\windows-cmd-promt>
+
+
+
+
+---------------------------Connect to github----------------
+
+1,step
+C:\Users\hp\Desktop\windows-cmd-promt>git remote add origin [remote url/]
+C:\Users\hp\Desktop\windows-cmd-promt>git remote add origin https://github.com/Roksana18cse04/Windows-Command-line-Status.git
+2 ,step
+C:\Users\hp\Desktop\windows-cmd-promt>git remote
+origin
+origine
+3.step
+C:\Users\hp\Desktop\windows-cmd-promt>git remote -v
+origin  https://github.com/Roksana18cse04/Windows-Command-line-Status.git (fetch)
+origin  https://github.com/Roksana18cse04/Windows-Command-line-Status.git (push)
+origine https://github.com/Roksana18cse04/Windows-Command-line-Status.git (fetch)
+origine https://github.com/Roksana18cse04/Windows-Command-line-Status.git (push)
+
+
+
+1:  git add fileName.extension
+2:  git status
+3:  git commit -m "message"
+4.  git push -u origin main
+
+
+
+
+
+

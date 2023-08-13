@@ -1,0 +1,119 @@
+Microsoft Windows [Version 10.0.22000.2057]
+(c) Microsoft Corporation. All rights reserved.
+
+
+--Directory Change--
+		cd DirectoryName press enter
+C:\Users\hp>cd Desktop
+
+
+-- folder create --
+	mkdir FolderName press enter
+C:\Users\hp\Desktop>mkdir WindowsCMDPromt
+
+
+--- file create --
+type nul> filename.extension press enter
+C:\Users\hp\Desktop>type nul>FileName.txt
+
+
+-- file open ---
+    filename.extension press enter
+C:\Users\hp\Desktop>FileName.txt
+
+
+----file delete---
+del "File Name.extension" press enter
+C:\Users\hp\Desktop>Del "t.txt"
+
+----Folder Delete---
+	rmdir /s /q FolderName press enter
+C:\Users\hp\Desktop>rmdir /s/q WindowsCMDPromt
+
+
+----File Transfer To  ----
+	MOVE [SourcePath]\FileName.Extension [destination path]
+C:\Users\hp\Desktop>MOVE C:\Users\hp\Desktop\FileName.txt C:\Users\hp\Desktop\windows-cmd-promt
+
+
+----file copy to ----
+
+copy FileName.extension [Destination path]
+C:\Users\hp\Desktop> copy new.txt C:\Users\hp\Desktop\windows-cmd-promt
+
+
+
+---- file rename -----------
+ren [ previous name ] [newname]
+
+C:\Users\hp\Desktop\windows-cmd-promt>ren FileName.txt Windows-cmd.txt
+
+---previous directory ---
+C:\Users\hp>cd..
+
+C:\Users>
+
+
+---- one drive to another drive -----
+
+[here C: Drive  To D: Drive
+C:\Users\hp>cd..
+
+C:\Users>cd..
+
+C:\>cd windows\system32
+
+C:\Windows\System32>cd..
+
+C:\Windows>d:
+D:\>
+
+
+---previous drive---
+D:\>cd /d C:\Windows
+
+
+E:\Software-Engineering>cd..
+
+E:\>cd /d  C:\Windows
+
+C:\Windows> cd..
+
+C:\>cd /d  C:\Windows
+
+C:\Windows>cd /d System32
+C:\Windows\System32>
+
+------Show directory list--------
+
+
+C:\Users\hp\Desktop\windows-cmd-promt>dir
+ Volume in drive C is Windows
+ Volume Serial Number is FA6E-4574
+
+ Directory of C:\Users\hp\Desktop\windows-cmd-promt
+
+08/13/2023  08:24 PM    <DIR>          .
+08/13/2023  08:02 PM    <DIR>          ..
+08/13/2023  07:33 PM                 0 Git-CMD.txt
+08/13/2023  08:24 PM             1,617 Windows-cmd.txt
+               2 File(s)          1,617 bytes
+               2 Dir(s)  180,637,839,360 bytes free
+
+---folder location show---
+C:\Users\hp\Desktop\windows-cmd-promt>dir ad
+ Volume in drive C is Windows
+ Volume Serial Number is FA6E-4574
+
+ Directory of C:\Users\hp\Desktop\windows-cmd-promt
+
+File Not Found
+
+
+-------------hidden file show-----------------
+
+
+C:\Users\hp\Desktop\windows-cmd-promt>dir adh
+
+
+
