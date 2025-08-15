@@ -213,60 +213,79 @@ build/
 5. Push changes: `git push -u origin main`
 6. Create or switch branches: `git checkout -b branch-name`
 7. Merge branches: `git merge branch-name`
-─────────────────────────────────────────────
-          GIT SETUP & CONFIGURATION
-─────────────────────────────────────────────
-Check version:        git --version
-Set username:         git config --global user.name "ROKANA"
-Set email:            git config --global user.email "roksana18cse04@gmail.com"
-View settings:        git config --list
+
+Sure! Here’s your **Git Cheat Sheet** formatted properly as a **README.md** file:
+
+````markdown
+# Git Cheat Sheet: Windows Command Line
+
+─────────────────────────────────────────────  
+          GIT SETUP & CONFIGURATION  
+─────────────────────────────────────────────  
+
+- Check version:        `git --version`  
+- Set username:         `git config --global user.name "ROKANA"`  
+- Set email:            `git config --global user.email "roksana18cse04@gmail.com"`  
+- View settings:        `git config --list`  
+
+─────────────────────────────────────────────  
+          REPOSITORY INIT & STATUS  
+─────────────────────────────────────────────  
+
+- Init repo:            `git init`  
+- Check status:         `git status`  
+- See changes:          `git diff`  
+
+─────────────────────────────────────────────  
+          STAGING & COMMITTING  
+─────────────────────────────────────────────  
+
+- Add single file:      `git add filename.ext`  
+- Add all files:        `git add --all`  
+- Commit changes:       `git commit -m "message"`  
+
+- Undo last commit:  
+  - Soft (keep changes): `git reset --soft HEAD~`  
+  - Hard (discard changes): `git reset --hard HEAD~`  
+
+─────────────────────────────────────────────  
+          REMOTE REPOSITORY  
+─────────────────────────────────────────────  
+
+- Add remote:           `git remote add origin URL`  
+- Check remote:         `git remote -v`  
+- Push changes:         `git push -u origin main`  
+- Pull changes:         `git pull origin main`  
+
+─────────────────────────────────────────────  
+          BRANCHING & MERGING  
+─────────────────────────────────────────────  
+
+- Create branch:        `git checkout -b branch-name`  
+- Switch branch:        `git checkout branch-name`  
+- Rename branch:        `git branch -m old-name new-name`  
+- Merge branch:  
+  ```bash
+  git checkout main
+  git merge branch-name
+````
+
+* Resolve conflicts if prompted
 
 ─────────────────────────────────────────────
-          REPOSITORY INIT & STATUS
+COMMITS & HISTORY
 ─────────────────────────────────────────────
-Init repo:            git init
-Check status:         git status
-See changes:          git diff
+
+* View log:             `git log`
+* Compact log:          `git log --oneline`
+* Go to previous commit: `git checkout <commit-hash>`
+* Return to latest:     `git checkout main`
 
 ─────────────────────────────────────────────
-          STAGING & COMMITTING
+.GITIGNORE
 ─────────────────────────────────────────────
-Add single file:      git add filename.ext
-Add all files:        git add --all
-Commit changes:       git commit -m "message"
-Undo last commit:
-  soft (keep changes): git reset --soft HEAD~
-  hard (discard):      git reset --hard HEAD~
 
-─────────────────────────────────────────────
-          REMOTE REPOSITORY
-─────────────────────────────────────────────
-Add remote:           git remote add origin URL
-Check remote:         git remote -v
-Push changes:         git push -u origin main
-Pull changes:         git pull origin main
-
-─────────────────────────────────────────────
-          BRANCHING & MERGING
-─────────────────────────────────────────────
-Create branch:        git checkout -b branch-name
-Switch branch:        git checkout branch-name
-Rename branch:        git branch -m old-name new-name
-Merge branch:         git checkout main
-                      git merge branch-name
-Resolve conflicts if prompted
-
-─────────────────────────────────────────────
-          COMMITS & HISTORY
-─────────────────────────────────────────────
-View log:             git log
-Compact log:          git log --oneline
-Go to previous commit:git checkout <commit-hash>
-Return to latest:     git checkout main
-
-─────────────────────────────────────────────
-          .GITIGNORE
-─────────────────────────────────────────────
+```gitignore
 # OS
 Thumbs.db
 .DS_Store
@@ -284,17 +303,20 @@ __pycache__/
 *.log
 dist/
 build/
+```
 
 ─────────────────────────────────────────────
-          RECOMMENDED WORKFLOW
-─────────────────────────────────────────────
-1. git status
-2. git add filename.ext / git add --all
-3. git commit -m "message"
-4. git pull origin main
-5. git push -u origin main
-6. git checkout -b branch-name (if needed)
-7. git merge branch-name (if needed)
+RECOMMENDED WORKFLOW
 ─────────────────────────────────────────────
 
+1. `git status`
+2. `git add filename.ext` / `git add --all`
+3. `git commit -m "message"`
+4. `git pull origin main`
+5. `git push -u origin main`
+6. `git checkout -b branch-name` (if needed)
+7. `git merge branch-name` (if needed)
 
+─────────────────────────────────────────────
+
+```
